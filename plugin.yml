@@ -1,0 +1,79 @@
+name: Kore
+version: 0.1.0-beta
+authors: [Dooder07]
+website: http://doodcraft.net/
+
+main: net.doodcraft.dooder07.spigot.kore.KorePlugin
+
+softdepend: [Vault, PermissionsEx, Factions, ProjectKorra, PlotSquared]
+
+commands:
+  kore:
+    description: Base command
+  hat:
+    description: Wear a hat
+  tpa:
+    description: Request a teleport to another player
+  accept:
+    description: Accept a players teleport request
+  deny:
+    description: Reject a players teleport request
+  compel:
+    description: Compel a player to chat or use a command
+  head:
+    description: Spawn a player head
+  gm:
+    description: Toggle your gamemode
+  afk:
+    description: Set away from keyboard status
+  say:
+    description: Broadcast a message
+  me:
+    description: Show an emote
+  g:
+    description: Global broadcast
+  s:
+    description: Global staff broadcast
+permissions:
+  kore.command.tpa:
+    description: Allows usage of /tpa, /accept and /deny
+    default: true
+  kore.command.hat:
+    description: Allows usage of /hat
+    default: true
+  kore.teleport.bypasscooldown:
+    description: Allows player to bypass tpa cooldown
+    default: OP
+  kore.general.compel:
+    description: Allows usage of /compel
+    default: OP
+  kore.general.head:
+    description: Allows usage of /head
+    default: OP
+  kore.general.gm:
+    description: Allows usage of /gm
+    default: OP
+  kore.chat.afk:
+    description: Allows usage of /afk
+    default: true
+  kore.chat.afkbypass:
+    description: Allows player to bypass auto-afk
+    default: OP
+  kore.chat.say:
+    description: Allows usage of /say
+    default: OP
+  kore.chat.me:
+    description: Allows usage of /me
+    default: true
+  kore.global.use:
+    description: Allows usage of /g
+    default: true
+  kore.global.hear:
+    description: Allows receipt of global messages
+    default: true
+  kore.staff.use:
+    description: Allows usage of /s
+    default: OP
+  kore.staff.hear:
+    description: Allows receipt of staff messages
+    default: OP
